@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite Test Swag Labs">
+
+    <!--Parameters for Login Fields-->
+    <parameter name="username" value="standard_user"/>
+    <parameter name="password" value="secret_sauce"/>
+
+    <!--Parameters for Checkout Details Fields-->
+    <parameter name="firstname" value="Anindya"/>
+    <parameter name="lastname" value="Nabila"/>
+    <parameter name="postalcode" value="14440"/>
+
+    <!--<parameter name="browser" value="FIREFOX" />-->
+    <parameter name="browser" value="CHROME" />
+
+    <test name="Test Checkout Items">
+        <classes>
+            <class name="com.juaracoding.nabila.Hook" />
+            <class name="com.juaracoding.nabila.LoginTest" />
+            <class name="com.juaracoding.nabila.InventoryTest" />
+            <class name="com.juaracoding.nabila.CartTest" />
+            <class name="com.juaracoding.nabila.CheckoutStepOneTest" />
+            <class name="com.juaracoding.nabila.CheckoutStepTwoTest" />
+            <class name="com.juaracoding.nabila.CheckoutCompleteTest" />
+        </classes>
+    </test>
+</suite>
